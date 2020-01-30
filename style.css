@@ -1,5 +1,4 @@
 body {
-	text-decoration:none;
     background-color: #93E3CC;
 	font-family: Helvetica;
 	font-size: 20px;
@@ -7,6 +6,7 @@ body {
 }
 
 a {
+	text-decoration: none;
 	color: #6819A1;
 	padding: 0.25em;
 	transition: background-color 300ms;
