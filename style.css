@@ -22,3 +22,11 @@ ul {
 li { 
 	list-style: none;
 }
+h1{
+	text-align: center;
+	margin: auto;
+	border: 8px solid #ffffff;
+	padding: 5px;
+	width: 20%;
+
+}
