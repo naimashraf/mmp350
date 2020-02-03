@@ -31,3 +31,11 @@ h1{
 	width: 20%;
 
 }
+
+#container {
+	max-width: 1200px;
+	margin: 0 auto;
+	}
+img {max-width: 1200px;
+     margin-top: 50px;
+ }
