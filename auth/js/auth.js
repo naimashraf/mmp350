@@ -23,3 +23,6 @@ loginButton.onclick = function() {
 function onError(onErrorMessage) {
 	loginMessage.textContent = onErrorMessage;
 }
+function onLoggedIn(uid, displyName) {
+	userName.textContent = "welcome" + displyName
+}
