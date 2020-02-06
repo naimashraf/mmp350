@@ -18,3 +18,4 @@ loginButton.onclick = function() {
 	console.log(loginEmail.value, loginPassword.value);
 
 	loginMessage.textContent = "You logged in.";
+};
