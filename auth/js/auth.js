@@ -19,3 +19,7 @@ loginButton.onclick = function() {
 
 	loginMessage.textContent = "You logged in.";
 };
+
+function onError(onErrorMessage) {
+	loginMessage.textContent = onErrorMessage;
+}
