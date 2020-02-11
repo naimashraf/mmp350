@@ -15,8 +15,7 @@ const loginMessage = document.getElementById("login-message");
 */
 
 loginButton.onclick = function() {
-	console.log(loginEmail.value, loginPassword.value);
-
+	console.log(loginEmail.value, loginPassword.value,
 	loginMessage.textContent = "You logged in.";
 };
 
