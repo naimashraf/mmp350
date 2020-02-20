@@ -1,0 +1,25 @@
+/*
+	type pairing 3
+	
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+
+
+*/
+
+h1,
+input,
+button {
+	font-family: 'Roboto Slab', serif;
+}
+
+.post,
+a {
+	font-family: 'Roboto', sans-serif;
+}
+
+.post-date {
+	color: gray;
+}
