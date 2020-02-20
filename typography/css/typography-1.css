@@ -1,0 +1,15 @@
+
+.post-text {
+	font-family: 'Open Sans',serif;
+	font-size: 1.25em;
+
+}
+
+.post-info {
+	color: gray;
+	font-family: 'Roboto', sans-serif;
+}
+
+.post-author {
+	color: darkblue;
+}
