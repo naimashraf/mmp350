@@ -1,0 +1,55 @@
+/*
+	font pairing 2
+
+    font-family: 'Lobster', ;
+    font-family: 'Roboto', ;
+
+
+
+
+*/
+
+.post,
+input {
+	font-family: 'Lobster', sans-serif ;
+
+}
+
+h1,
+button,
+a,
+.post-date {
+	font-family: 'Roboto',sans-serif ;
+	font-size: 1.5em;
+}
+
+button {
+	font-size: 1em;
+}
+
+
+.post {
+	line-height: 1.5;
+}
+
+.post-text {
+	font-size: 1.7em;
+	text-shadow: 2px 2px 2px   #f5b7b1;
+
+}
+
+.post-info {
+	color:  #3498db;
+}
+
+.post-author {
+	/*color: darkblue;*/
+}
+
+.post-author strong {
+	color:   #e74c3c;
+}
+
+.post-date {
+	font-size: .8em;
+}
