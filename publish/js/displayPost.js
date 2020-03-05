@@ -1,7 +1,7 @@
 // container of all posts
 const posts = js.getEl('posts');
 
-function createPost(postData, userInfo, postId) {
+function createPost(postData, userInfo, postId,postDate, postAuthor) {
 
 	// container of invidual post
 	const post = js.createEl('div', 'post');
@@ -10,6 +10,7 @@ function createPost(postData, userInfo, postId) {
 	posts.insertBefore(post, posts.firstElementChild);
 
 	// add posts in chronological
+
 	//  posts.appendChild(post);
 	
 	const text = js.createEl('div', 'post-text', postData.text);
@@ -20,13 +21,13 @@ function createPost(postData, userInfo, postId) {
 	post. appendChild(postInfo);
 
 	// author userInfo.displayName
-	const author = js.createEl('div', 'post-author', 'userInfo.displayName');
+	const author = js.createEl('div', 'post-author', userInfo.displayName);
 	post. appendChild(author);
 
 	//post date
-	const date = js.createEl('div', 'post-date', js.formatDate (postDate.date);
+	const date = js.createEl('div', 'post-date', js.formatDate (postData.date));
 	postInfo. appendChild(date);
 
-	cosole.log(date);
+	console.log(date);
 	
 }

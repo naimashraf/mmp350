@@ -16,17 +16,17 @@ function createPost(postData, userInfo, postId) {
 	post.appendChild(text);
 
 	// post info
-	const postInfo = js.createEl('div', 'post-info');
-	post. appendChild(postInfo);
+	//const postInfo = js.createEl('div', 'post-info');
+	//post. appendChild(postInfo);
 
 	// author userInfo.displayName
-	const author = js.createEl('div', 'post-author', 'userInfo.displayName');
-	post. appendChild(author);
+	//const author = js.createEl('div', 'post-author', 'userInfo.displayName');
+	//post. appendChild(author);
 
 	//post date
-	const date = js.createEl('div', 'post-date', js.formatDate (postDate.date);
-	postInfo. appendChild(date);
+	//const date = js.createEl('div', 'post-date', js.formatDate (postDate.date);
+	//postInfo. appendChild(date);
 
-	cosole.log(date);
+	//cosole.log(date);
 	
 }
