@@ -2,7 +2,7 @@
 
 * root is the top most element of the html page */
 :root {
-	* monochomatic green color scheme 
+	* monochomatic light blue color scheme 
 	--main-color: #18B7C2;
 	--accent-color: #11868F;
 	--placeholder-color: #56C4CC;
@@ -10,7 +10,7 @@
 }
 
 :root {
-	* orange analagous color scheme
+	* li analagous color scheme
 	--main-color: #81AAC2;
 	--accent-color: #84A4D9;
 	--placeholder-color: var(--accent-color);
@@ -19,7 +19,7 @@
 
 :root {
 	/* triadic color scheme */
-	--main-hue: 90;
+	/*--main-hue: 90;
 	--accent-one: calc(var(--main-hue) + 120);
 	--accent-two: calc(var(--main-hue) - 120);
 
@@ -30,7 +30,7 @@
 
 :root {
 	/* analagous color scheme */
-	--main-hue: 135;
+	/*--main-hue: 135;
 	--offset: 45;
 	--accent-one: calc(var(--main-hue) + var(--offset));
 	--accent-two: calc(var(--main-hue) - var(--offset));
@@ -42,7 +42,7 @@
 
 :root {
 	/* complementary */
-	--main-hue: 240;
+	/*--main-hue: 240;
 	--accent-one: calc(var(--main-hue) + 180);
 
 	--main-color: hsl(var(--main-hue), 50%, 70%);
@@ -52,7 +52,7 @@
 
 :root {
 	/* monochromatic */
-	--main-hue: 240;
+	--main-hue: 197;
 
 	--main-color: hsl(var(--main-hue), 50%, 70%);
 	--accent-color: hsl(var(--main-hue), 60%, 40%);
