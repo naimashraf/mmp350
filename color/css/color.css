@@ -1,20 +1,20 @@
 /* custom properties */
 
-/* root is the top most element of the html page */
+* root is the top most element of the html page */
 :root {
-	/* monochomatic green color scheme 
-	--main-color: #4DFFE1;
-	--accent-color: #00CCAA;
-	--placeholder-color: #268071;
-	*/
+	* monochomatic green color scheme 
+	--main-color: #18B7C2;
+	--accent-color: #11868F;
+	--placeholder-color: #56C4CC;
+	
 }
 
 :root {
-	/* orange analagous color scheme 
-	--main-color: #FFD908;
-	--accent-color: #E8AF05;
+	* orange analagous color scheme
+	--main-color: #81AAC2;
+	--accent-color: #84A4D9;
 	--placeholder-color: var(--accent-color);
-	*/
+	
 }
 
 :root {
