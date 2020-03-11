@@ -35,6 +35,8 @@
 
 		<div id="user-info">
 			<p id="user-name"></p>
+			<button id="logout-button">Logout</button>
+			<a href="profile.html" id="profile-link">Edit Profile</a>
 		</div>
 
 		<div id="login">
@@ -44,34 +46,12 @@
 			<p id="login-message"></p>
 			<p><a href="create.html">Create a new account</a></p>
 		</div>
-		<div id="publish-post">
-			<textarea id="publish-text" placeholder="Compose your post..."></textarea>
-			<button id="publish-button">Publish</button>
+
+		<div id="profile">
+			<input id="display-name" placeholder="User Name">
+			<textarea id="profile-bio" placeholder="Your bio"></textarea>
+			<button id="update-profile">Update Profile</button>
 		</div>
-
-
-		<div id="posts">
-			<div class="post">
-				<div class="post-text">I skate where the puck is going to be, not to where it has been.</div>
-				<div class="post-info">
-					<div class="post-author">by <strong>Wayne Gretzky</strong></div>
-					<div class="post-date">on Monday, January 1, 1999</div>
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="post-text">I skate where the puck is going to be, not to where it has been.</div>
-				<div class="post-info">
-					<div class="post-author">by <strong>Wayne Gretzky</strong></div>
-					<div class="post-date">on Monday, January 1, 1999</div>
-				</div>
-			</div>
-		</div>
-
-		<div id= "frofile">
-			<input id="display-name" placeholder="user Name">
-			<textarea id="profile-bio" placeholder=""></textarea> 
-</div>
 		
 	</div>
 
@@ -79,8 +59,5 @@
 	<script src="js/auth.js"></script>
 	<script src="js/profile.js"></script>
 	
-	<script>
-		fb.loadPosts();
-	</script>
 </body>
 </html>

@@ -18,6 +18,11 @@ button, input {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+#user-info {
+	margin-bottom: 1em;
+}
+
 /* user is authenticated */
 .auth #login {
 	display: none;
@@ -27,6 +32,7 @@ button, input {
 	display: block;
 }
 
+/* user is not authenticated */
 #user-info {
 	display: none;
 }

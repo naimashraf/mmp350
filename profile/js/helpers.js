@@ -72,7 +72,7 @@ fb.getUserProfile = function(uid) {
 fb.updateProfile = function(id, key, value) {
 	const info = {};
 	info[key] = value;
-	firebase.database().ref('users').child(uid).update(info);
+	firebase.database().ref('users').child(id).update(info);
 };
 
 fb.uploadImage = function(file, uid) {
