@@ -11,7 +11,7 @@ const profileContactNumber = js.getEl("profile-contactNumber");
 const profileButton = js.getEl("update-profile");
 
 function displayProfile(userName, userInfo) {
-	
+
 
 	// display the user profile name
 	profileName.value = userName;
@@ -22,8 +22,8 @@ function displayProfile(userName, userInfo) {
 		profileGender.value = userInfo.gender;
 	}
 
-	if (userInfo.zipCode) {
-		profileZipCode.value = userInfo.zipCode;
+	if (userInfo.zipcode) {
+		profileZipcode.value = userInfo.zipCode;
 	}
 
 	if (userInfo.bio) {
@@ -34,8 +34,8 @@ function displayProfile(userName, userInfo) {
 		profileLocation.value = userInfo.location;
 	}
 
-	if (userInfo.contactNumber) {
-		profileContactNumber.value = userInfo.contactNumber;
+	if (userInfo.contactnumber) {
+		profileContactnumber.value = userInfo.contactNumber;
 	}
 
 }
