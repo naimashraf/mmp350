@@ -9,6 +9,8 @@ const loginPassword = js.getEl("login-password");
 const loginButton = js.getEl("login-button");
 const loginMessage = js.getEl("login-message");
 const userName = js.getEl("user-name");
+const logoutButton = js.getEl("logout-button");
+const profileLink = js.getEl("edit-profile-link");
 
 /*
 	event listener 
@@ -20,9 +22,10 @@ loginButton.onclick = function() {
 	fb.login(loginEmail.value, loginPassword.value);
 };
 
-logoutButton.onclick = function(){
+logoutButton.onclick = function() {
 	fb.logout();
 };
+
 
 // adds login for hitting enter
 loginPassword.addEventListener('keyup', function(event) {
@@ -37,11 +40,15 @@ function onError(errorMessage) {
 
 function userLoggedIn(uid, displayName) {
 	userName.textContent = "Welcome " + displayName + ".";
-	//add user to profile link
-	const profileLink = js.getEl('profile-linki');
-	profileLink.href += '?uid=' + uid;
 
-	//add auth class
+	// add the link to the user profile
+	profileLink.href = "profile.html?uid=" + uid;
 
+	// add the auth body
 	document.body.classList.add('auth');
+}
+
+function noUser() {
+	// remove the auth body
+	document.body.classList.remove('auth');
 }

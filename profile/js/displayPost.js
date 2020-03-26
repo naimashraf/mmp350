@@ -19,4 +19,5 @@ function createPost(postData, userInfo, postId) {
 
 	// author userInfo.displayName
 	// date js.formatDate(postData.date) 
+	
 }

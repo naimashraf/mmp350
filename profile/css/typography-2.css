@@ -1,55 +1,27 @@
 /*
-	font pairing 2
-
-    font-family: 'Lobster', ;
-    font-family: 'Roboto', ;
-
-
-
-
+	type pairing 2
+	font-family: 'Tomorrow', sans-serif;
+	font-family: 'Kalam', cursive;
 */
 
-.post,
-input {
-	font-family: 'Lobster', sans-serif ;
-
+:root {
+	--text-size: 20px;
 }
 
 h1,
+input,
 button,
-a,
-.post-date {
-	font-family: 'Roboto',sans-serif ;
-	font-size: 1.5em;
+textarea,
+p {
+	font-family: 'Kalam', cursive;
 }
 
-button {
-	font-size: 1em;
-}
-
-
-.post {
-	line-height: 1.5;
-}
-
-.post-text {
-	font-size: 1.7em;
-	text-shadow: 2px 2px 2px   #f5b7b1;
-
-}
-
-.post-info {
-	color:  #3498db;
-}
-
-.post-author {
-	/*color: darkblue;*/
-}
-
-.post-author strong {
-	color:   #e74c3c;
+.post,
+a {
+	font-family: 'Tomorrow', sans-serif;
+	font-size: var(--text-size);
 }
 
 .post-date {
-	font-size: .8em;
+	color: gray;
 }
