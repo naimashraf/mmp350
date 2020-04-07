@@ -1,0 +1,55 @@
+/*
+	font pairing 3   
+
+    font-family: 'Oswald', ;
+    font-family: 'Open Sans', ;
+
+
+
+*/
+h1,
+.post,
+input {
+	font-family: 'Oswald', sans-serif ;
+
+}
+
+
+button,
+a,
+.post-date {
+	font-family: 'Open Sans',sans-serif ;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+button {
+	font-size: .1.5em;
+}
+
+
+.post {
+	line-height: 1.5;
+}
+
+.post-text {
+	font-size: 1.7em;
+	text-shadow: 3px 3px 3px    #d5dbdb;
+
+}
+
+.post-info {
+	color:    #48c9b0;
+}
+
+.post-author {
+	/*color: darkblue;*/
+}
+
+.post-author strong {
+	color:    #5499c7;
+}
+
+.post-date {
+	font-size: .8em;
+}
