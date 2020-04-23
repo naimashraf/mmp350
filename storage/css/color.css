@@ -1,0 +1,53 @@
+/* custom properties */
+
+/* root is the top most element of the html page */
+:root {
+	/* monochomatic orange color scheme*/ 
+	--main-color: #FF7700;
+	--accent-color: #FF9900;
+	--placeholder-color: #FFAA33;
+	
+}
+
+:root {
+	/* orange analagous color scheme*/
+
+	--main-color: #FF7700;
+	--accent-color: #00f4ff;
+	--placeholder-color: var(--accent-color);
+	
+}
+
+:root {
+	/* triadic color scheme*/ 
+	--main-color: #FF7700;
+	--accent-color: #ee00ff;
+	--placeholder-color: #11ff00;
+	
+}
+
+button, input, textarea {
+	background-color: var(--main-color);
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+
+button::placeholder, input::placeholder, textarea::placeholder {
+	color: var(--placeholder-color);
+}
+
+a {
+	color: var(--accent-color);
+}
+
+a:hover {
+	color: var(--main-color);
+}
+
+.post {
+	border-color: var(--accent-color);
+}
+
+#title, p {
+	color: var(--accent-color);
+}

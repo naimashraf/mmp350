@@ -1,3 +1,4 @@
+  
 /* firebase helper functions for mmp350 */
 
 const fb = {}; // firebase helpers
