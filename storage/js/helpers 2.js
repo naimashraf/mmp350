@@ -50,7 +50,6 @@ fb.loadPosts = function() {
 	fb.getUsers(undefined, users => {
 		firebase.database().ref('posts')
 			.on('child_added', post => {
-				// console.log(post, 'post53');
 				createPost(post.val(), users[post.val().uid], post.key);
 			});
 	});
@@ -74,13 +73,10 @@ fb.getUserProfile = function(uid) {
 fb.updateProfile = function(uid, key, value) {
 	const info = {};
 	info[key] = value;
-	console.log(info[key], key, 'value');
 	firebase.database().ref('users').child(uid).update(info);
 };
 
 fb.uploadImage = function(file, uid) {
-
-
 	if (file) {
 		firebase.storage().ref('users').child(uid).child('profile-image')
 			.put(file)
@@ -92,66 +88,12 @@ fb.uploadImage = function(file, uid) {
 	}
 };
 
-
-
-var imageURL;
-function uploadPreview () {
-
-	// let deleteDoc = firebase.database().ref('users').doc('llCky8uOaaQlWyZRBBFCwXjAw3y1').delete();
-
-	imageURL = document.getElementById('postImage').files[0];
-	const filePath = 'post_image' + '/' + new Date().getTime().toString(); 
-		var storageRef = storage.ref();
-		const file = imageURL;
-		const name = (+new Date()) + '-' + file.name;
-		const metadata = {
-		  	contentType: file.type
-		};
-
-	 /* Start */
-	var uploadTask = storageRef.child('images/' + file.name).put(file, metadata);
-	uploadTask.on('state_changed', 
-	  function(snapshot) {
-	    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-	    document.getElementById('uploadProgress').innerHTML = progress;
-	    
-	  }, function(error) {
-	  		console.log(error, 'error');
-	 
-	}, function() {
-	  uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
-
-		imageURL = downloadURL;
-		  
-		  console.log(imageURL, '126');
-		  
-	  	var x = document.getElementById("preview");
-	  	var img = document.createElement("IMG");
-	  	img.setAttribute('src', imageURL);
-	  	img.setAttribute("width", "100");
-	  	x.appendChild(img);
-	  	
-	  });
-	});
-
-}
-
 fb.publishPost = function(uid, text) {
-
-	console.log(imageURL, 'imageURL141');
-	
-	if (imageURL) {
 	const post = {
-				uid: uid,
-				date: Date.now(),
-				text: text,
-				imageURL: imageURL
-			}
-
-	firebase.database().ref('posts').push(post);
-}
-
-
+		uid: uid,
+		date: Date.now(),
+		text: text
+	}
 
 	const tags = text.match(/#[a-z0-9]+/gi);
 	if (tags) {
@@ -162,7 +104,8 @@ fb.publishPost = function(uid, text) {
 		}
 	}
 
-	
+	firebase.database().ref('posts')
+		.push(post);
 };
 
 fb.getUID = function() {

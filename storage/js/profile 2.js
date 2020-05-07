@@ -4,10 +4,10 @@ fb.getUserProfile(profileUID);
 
 const profileName = js.getEl("profile-display-name");
 const profileGender = js.getEl("profile-gender");
-const profilezipcode = js.getEl("profile-zipcode");
+const profilezipcode = js.getEl("profile-zipCode");
 const profileBio = js.getEl("profile-bio");
 const profileLocation = js.getEl("profile-location");
-const profilecontactnumber = js.getEl("profile-contactnumber");
+const profilecontactnumber = js.getEl("profile-contactNumber");
 const profileButton = js.getEl("update-profile");
 
 function displayProfile(userName, userInfo) {
@@ -23,7 +23,7 @@ function displayProfile(userName, userInfo) {
 	}
 
 	if (userInfo.zipcode) {
-		profilezipcode.value = userInfo.zipCode;
+		profileZipcode.value = userInfo.zipCode;
 	}
 
 	if (userInfo.bio) {
@@ -35,7 +35,7 @@ function displayProfile(userName, userInfo) {
 	}
 
 	if (userInfo.contactnumber) {
-		profilecontactnumber.value = userInfo.contactNumber;
+		profileContactnumber.value = userInfo.contactNumber;
 	}
 
 }

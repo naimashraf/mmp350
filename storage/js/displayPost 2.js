@@ -13,13 +13,7 @@ function createPost(postData, userInfo, postId) {
 	//  posts.appendChild(post);
 	
 	const text = js.createEl('div', 'post-text', postData.text);
-
-	const imgSrc = document.createElement('img');
-	imgSrc.setAttribute('src', postData.imageURL);
-
-		 
 	post.appendChild(text);
-	post.appendChild(imgSrc);
 
 	// post info 
 
