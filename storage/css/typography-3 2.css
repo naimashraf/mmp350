@@ -1,28 +1,30 @@
 /*
-	font pairing 1
+	font pairing 3   
 
-    font-family: 'Satisfy', ;
+    font-family: 'Oswald', ;
     font-family: 'Open Sans', ;
 
 
-*/
 
+*/
+h1,
 .post,
 input {
-	font-family: sans-serif;
+	font-family: 'Oswald', sans-serif ;
 
 }
 
-h1,
+
 button,
 a,
 .post-date {
 	font-family: 'Open Sans',sans-serif ;
 	font-size: 1.5em;
+	font-style: italic;
 }
 
 button {
-	font-size: 1em;
+	font-size: .1.5em;
 }
 
 
@@ -32,10 +34,12 @@ button {
 
 .post-text {
 	font-size: 1.7em;
+	text-shadow: 3px 3px 3px    #d5dbdb;
+
 }
 
 .post-info {
-	color: gray;
+	color:    #48c9b0;
 }
 
 .post-author {
@@ -43,13 +47,9 @@ button {
 }
 
 .post-author strong {
-	color:  #f1948a;
+	color:    #5499c7;
 }
 
 .post-date {
 	font-size: .8em;
-}
-
-input {
-	margin-bottom: 10px;
 }

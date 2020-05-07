@@ -9,7 +9,7 @@
 
 .post,
 input {
-	font-family: sans-serif;
+	font-family: 'Satisfy', sans-serif ;
 
 }
 
@@ -32,6 +32,8 @@ button {
 
 .post-text {
 	font-size: 1.7em;
+	text-shadow: 4px 4px 4px  #aeb6bf;
+
 }
 
 .post-info {
@@ -48,8 +50,4 @@ button {
 
 .post-date {
 	font-size: .8em;
-}
-
-input {
-	margin-bottom: 10px;
 }

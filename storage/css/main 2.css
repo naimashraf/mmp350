@@ -12,7 +12,6 @@ button, input {
 	padding: 3px 6px;
 	line-height: 1;
 	vertical-align: middle;
-	cursor: pointer;
 }
 
 #container {
@@ -33,16 +32,4 @@ body.auth #user-info{
 /* not authenticated */
 body #user-info {
 	display: none;
-}
-
-input {
-	width: 100%;
-}
-#preview img {
-	width: 100px;
-	height: auto;
-}
-
-img {
-	max-width: 140px;
 }
