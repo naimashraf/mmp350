@@ -1,0 +1,19 @@
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.menu li {
+	margin: 0 5px;
+	padding: 4px;
+	list-style: none;
+}
+
+.menu li a {
+	font-size: 14px;
+	text-decoration: none;
+}

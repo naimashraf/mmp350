@@ -1,0 +1,51 @@
+/*
+	font pairing 1
+
+    font-family: 'Satisfy', ;
+    font-family: 'Open Sans', ;
+
+
+*/
+
+.post,
+input {
+	font-family: sans-serif ;
+
+}
+
+h1,
+button,
+a,
+.post-date {
+	font-family: 'Open Sans',sans-serif ;
+	font-size: 1.5em;
+}
+
+button {
+	font-size: 1em;
+}
+
+
+.post {
+	line-height: 1.5;
+}
+
+.post-text {
+    font-size: 1.2em;
+    line-height: 1em;
+}
+.post-info {
+	color: gray;
+}
+
+.post-author {
+	/*color: darkblue;*/
+}
+
+.post-author strong {
+	color:  #f1948a;
+}
+
+.post-date {
+	font-size: .8em;
+}

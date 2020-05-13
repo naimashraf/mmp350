@@ -1,0 +1,45 @@
+/* Flex */
+.flex-container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.flex-container.content {
+	justify-content: space-between;
+}
+.flex-container .column {
+	padding: 0 10px;
+	width: 30%;
+}
+.flex-container .title {
+	padding: 0 10px;
+}
+.signup {
+	display: inline-block;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 1px solid #333;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 2px 10px;
+	color: #333;
+}
+.post {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+div {
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+ .flex-container .column {
+		width: 100%;
+	}
+}
